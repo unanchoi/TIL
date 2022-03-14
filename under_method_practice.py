@@ -1,4 +1,7 @@
 
+from pyrsistent import b
+
+
 class Animal:
     
     def __str__(self):
@@ -15,3 +18,17 @@ str(dog) # '나는 동물이다'
 
 print(dog) # 나는 동물이다
 print(str(dog)) # 나는 동물이다.
+
+class Operator:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+        return None
+
+    def __call__(self, a, b):
+        self.a = a
+        self.b = b
+        return self.a * self.b
+
+multiple = Operator(1,2)
+print(multiple(2,3))
