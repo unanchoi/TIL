@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 연습</title>
+
+<style>
+    body {
+        margin : 10vw;
+    }
+    .layout-container{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 80vh;
+        border: 10px solid black;
+        justify-content: space-evenly;
+        background-color: black;
+    }
+
+    .layout-title {
+
+        display: flex;
+        flex-basis: 13%;
+        flex-direction: row;
+    }
+
+    .title {
+        flex-basis: 98%;
+        text-align: center;
+        font-weight: 800;
+        background-color: pink;
+
+    }
+
+    .layout-recent{
+        display: flex;
+        flex-basis: 28%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+
+    .layout-popular {
+        display: flex;
+        flex-basis: 53%;
+        justify-content: space-evenly;
+        flex-direction: row;
+
+    }
+
+    .recent-box {
+        display: flex;
+        flex-basis: 23%;
+        border-color: black;
+        border-style: solid;
+        background-color: blue;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .popular1 {
+        border-style: solid;
+        background-color: red;
+        border-color: black;
+        flex-basis: 72%;
+    }
+
+    .popular2 {
+        border-style: solid;
+        background-color: red;
+        border-color: black;
+        flex-basis: 22%;
+
+    }
+    
+</style>
+
+
+</head>
+
+<body>
+
+    <div class = "layout-container">
+        <section class="layout-title">
+            <div class = "title">
+                타이틀
+            </div>
+
+        </section>
+
+        <section class="layout-recent">
+
+            <div class ="recent-box">최근 게시물1</div>
+            <div class ="recent-box">최근 게시물2</div>
+            <div class ="recent-box">최근 게시물3</div>
+            <div class ="recent-box">최근 게시물4</div>
+
+        </section>
+
+        <section class="layout-popular">
+
+            <div class="popular popular1"> 인기 게시물1</div>
+            <div class="popular popular2"> 인기 게시물2</div>
+        
+        </section>
+
+    </div>
+
+</body>
+
+</html>

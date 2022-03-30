@@ -1,6 +1,4 @@
 
-from pyrsistent import b
-
 
 class Animal:
     
