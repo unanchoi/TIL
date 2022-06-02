@@ -8,5 +8,8 @@ public class Main {
         System.out.println("singleton1 : " + singleton1);
         System.out.println("singleton2 : " + singleton2);
 
+        String singleton3 = Singleton3.INSTANCE.getName();
+        System.out.println("singleton3 : " + singleton3);
+
     }
 }
