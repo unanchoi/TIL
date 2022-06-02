@@ -1,9 +1,9 @@
 package item3;
 
-public enum Singleton2 {
-    KKOBUGi;
+public class Singleton2 {
+    public static final Singleton2 INSTANCE = new Singleton2();
 
-    public void moolDaepo() {
-        System.out.println("물 대포");
+    private Singleton2() {
     }
+
 }
