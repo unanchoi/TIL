@@ -1,6 +1,6 @@
 package item3;
 
-public enum Poketmon2 {
+public enum Singleton2 {
     KKOBUGi;
 
     public void moolDaepo() {
