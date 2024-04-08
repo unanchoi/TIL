@@ -1,4 +1,3 @@
-# Item3. private과 Enum으로 싱글톤을 보증하라.
 
 # 싱글톤(Singleton)이란?
 
