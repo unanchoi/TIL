@@ -1,4 +1,4 @@
-# finalizer, cleaner 사용올 피하라
+# 아이템8 : finalizer, cleaner 사용올 피하라
 
 Java의 두 가지 객체소멸자 -> 즉시 수행된다는 보장이 없음.
 1. finalizer
