@@ -1,4 +1,4 @@
-# 다 쓴 객체 참조를 해제하라.
+# 아이템 7 : 다 쓴 객체 참조를 해제하라.
 
 ** Java는 기본적으로 GC가 메모리 관리를 해준다. -> 방심하면 안됨.
 
@@ -6,11 +6,11 @@
 
 public class Stack {
 
-private Object[] elements;
+  private Object[] elements;
 
-private int size = 0;
+  private int size = 0;
 
-private static final int DEFAULT_INITIAL_CAPACITY = 16;
+  private static final int DEFAULT_INITIAL_CAPACITY = 16;
 
 public Stack() {
 
@@ -20,18 +20,17 @@ elements = new Object[DEFAULT_INITIAL_CAPACITY];
 
 public void push(Object e) {
 
-ensureCapacityO;
+  ensureCapacityO;
 
-elements[size++] = e;
+  elements[size++] = e;
 
 public Object pop() {
 
-if (size = 0)
+  if (size = 0)
 
-throw new EmptyStackException();
+  throw new EmptyStackException();
 
-return elements[—size];
-
+  return elements[—size];
 }
 
 /**
