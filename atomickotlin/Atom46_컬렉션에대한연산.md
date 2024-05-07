@@ -39,7 +39,7 @@ neg eq "[-3, -1]"
 ```
 
 
-subOf()
+sumOf()
 ```kotlin
 data class Product(  
     val name: String  
